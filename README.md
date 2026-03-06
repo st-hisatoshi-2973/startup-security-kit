@@ -1,5 +1,7 @@
 # Startup Security Kit
 
+Practical security guidance for startups and small teams, combining lightweight ISMS, developer security checklists, and secure backend patterns.
+
 Security starter kit for startups and small teams.
 
 This repository provides practical security guidance that small teams can realistically adopt.
