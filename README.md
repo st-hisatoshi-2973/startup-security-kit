@@ -146,7 +146,7 @@ Japanese documents are translations.
 # Roadmap
 
 * [x] ISMS Lite
-* [ ] Developer Security Checklist
+* [x] Developer Security Checklist
 * [ ] Secure Backend Patterns
 * [ ] Threat Modeling Examples
 * [ ] Cloud Security Guide
