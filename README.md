@@ -15,6 +15,16 @@ Startup Security Kit focuses on **lightweight and practical security practices**
 
 This project includes three core components:
 
+```mermaid
+flowchart TD
+A[ISMS Lite<br>Security Governance]
+B[Developer Security Checklist<br>Secure Development Practices]
+C[Secure Backend Patterns<br>Secure Implementation]
+
+A --> B
+B --> C
+```
+
 ### ISMS Lite
 
 A lightweight ISMS implementation designed for small teams.
