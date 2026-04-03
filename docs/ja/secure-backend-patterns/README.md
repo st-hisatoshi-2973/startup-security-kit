@@ -31,6 +31,7 @@
 | パターン                  | 内容           |
 | --------------------- | ------------ |
 | jwt-authentication.md | JWT認証の設計パターン |
+| rbac-authorization.md | RBAC認可の設計パターン |
 
 ---
 
