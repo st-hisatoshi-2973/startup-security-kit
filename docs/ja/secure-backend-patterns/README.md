@@ -32,6 +32,7 @@
 | --------------------- | ------------ |
 | jwt-authentication.md | JWT認証の設計パターン |
 | rbac-authorization.md | RBAC認可の設計パターン |
+| credential-compromise-supply-chain.md | 認証情報侵害とサプライチェーン攻撃 |
 
 ---
 
