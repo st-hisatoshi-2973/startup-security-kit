@@ -31,6 +31,7 @@ These patterns focus on backend-level security design, including:
 | jwt-authentication.md | JWT authentication design patterns |
 | rbac-authorization.md | RBAC authorization design patterns |
 | credential-compromise-supply-chain.md | Credential compromise and supply chain attacks |
+| detection-and-response.md | Design patterns for detecting credential abuse |
 
 ---
 
