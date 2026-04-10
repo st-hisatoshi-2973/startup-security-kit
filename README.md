@@ -168,6 +168,29 @@ Startup Security Kit provides **practical security guidance designed for small t
 
 ---
 
+# Claude Code Integration
+
+1. Add Startup Security Kit
+
+```bash
+git submodule add https://github.com/st-hisatoshi-2973/startup-security-kit.git startup-security-kit
+git commit -m "Add startup-security-kit as submodule"
+```
+
+2. Setup Claude skills
+
+```bash
+cp -r startup-security-kit/templates/claude .claude
+```
+
+3. Run
+
+```bash
+/ssk-security-review
+```
+
+---
+
 # License
 
 MIT
