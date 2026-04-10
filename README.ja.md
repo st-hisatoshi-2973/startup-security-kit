@@ -164,3 +164,32 @@ startup-security-kit
 そのため、大企業向けのセキュリティフレームワークをそのまま導入することは現実的ではありません。
 
 Startup Security Kit は、小規模チームでも実践できる **軽量で実用的なセキュリティプラクティス** を提供することを目的としています。
+
+---
+
+# Claude Code 連携（Claude Code Integration）
+
+1. Startup Security Kit を追加する
+
+```bash
+git submodule add https://github.com/st-hisatoshi-2973/startup-security-kit.git startup-security-kit
+git commit -m "Add startup-security-kit as submodule"
+```
+
+2. Claude skills をセットアップする
+
+```bash
+cp -r startup-security-kit/templates/claude .claude
+```
+
+3. 実行する
+
+```bash
+/ssk-security-review
+```
+
+---
+
+# ライセンス
+
+MIT
