@@ -32,6 +32,7 @@ These patterns focus on backend-level security design, including:
 | rbac-authorization.md | RBAC authorization design patterns |
 | credential-compromise-supply-chain.md | Credential compromise and supply chain attacks |
 | detection-and-response.md | Design patterns for detecting credential abuse |
+| ci-cd.md | CI/CD security design patterns |
 
 ---
 

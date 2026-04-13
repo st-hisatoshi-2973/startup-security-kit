@@ -34,6 +34,7 @@
 | rbac-authorization.md | RBAC認可の設計パターン |
 | credential-compromise-supply-chain.md | 認証情報侵害とサプライチェーン攻撃 |
 | detection-and-response.md | 認証情報の悪用を検知する設計パターン |
+| ci-cd.md | CI/CDのセキュリティ設計パターン |
 
 ---
 
