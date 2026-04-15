@@ -27,6 +27,8 @@ When reviewing, refer to the following as needed:
 - `startup-security-kit/docs/en/secure-backend-patterns/jwt-authentication.md`
 - `startup-security-kit/docs/en/secure-backend-patterns/rbac-authorization.md`
 - `startup-security-kit/docs/en/secure-backend-patterns/detection-and-response.md`
+- `startup-security-kit/docs/en/secure-backend-patterns/ci-cd.md`
+- `startup-security-kit/docs/en/secure-backend-patterns/dependency-security.md`
 
 Do not blindly list all items.
 Select only relevant items based on the code.
