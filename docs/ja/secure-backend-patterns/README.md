@@ -36,6 +36,7 @@
 | detection-and-response.md | 認証情報の悪用を検知する設計パターン |
 | ci-cd.md | CI/CDのセキュリティ設計パターン |
 | dependency-security.md | 依存関係のセキュリティ設計パターン |
+| api-security.md | APIのセキュリティ設計パターン |
 
 ---
 

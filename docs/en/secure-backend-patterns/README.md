@@ -34,6 +34,7 @@ These patterns focus on backend-level security design, including:
 | detection-and-response.md | Design patterns for detecting credential abuse |
 | ci-cd.md | CI/CD security design patterns |
 | dependency-security.md | Dependency security design patterns |
+| api-security.md | API Security Design Patterns |
 
 ---
 
