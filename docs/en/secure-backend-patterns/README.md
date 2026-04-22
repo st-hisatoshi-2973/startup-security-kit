@@ -35,6 +35,7 @@ These patterns focus on backend-level security design, including:
 | ci-cd.md | CI/CD security design patterns |
 | dependency-security.md | Dependency security design patterns |
 | api-security.md | API Security Design Patterns |
+| token-secret.md | Token and Secret Management Security Design Patterns |
 
 ---
 
