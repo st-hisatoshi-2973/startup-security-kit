@@ -36,6 +36,7 @@ These patterns focus on backend-level security design, including:
 | dependency-security.md | Dependency security design patterns |
 | api-security.md | API Security Design Patterns |
 | token-secret.md | Token and Secret Management Security Design Patterns |
+| logging-audit.md | Security Design Patterns for Logging / Audit |
 
 ---
 

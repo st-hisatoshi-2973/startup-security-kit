@@ -38,6 +38,7 @@
 | dependency-security.md | 依存関係のセキュリティ設計パターン |
 | api-security.md | APIのセキュリティ設計パターン |
 | token-secret.md | トークン・シークレット管理のセキュリティ設計パターン |
+| logging-audit.md | ログ / 監査のセキュリティ設計パターン |
 
 ---
 
