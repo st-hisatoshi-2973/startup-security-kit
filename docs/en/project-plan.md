@@ -107,6 +107,9 @@ startup-security-kit
 │  │  ├ checklists
 │  │  │   └ developer-security-checklist.md
 │  │  │
+│  │  ├ threat-modeling
+│  │  │   └ overview.md
+│  │  │
 │  │  └ secure-backend-patterns
 │  │      ├ jwt-authentication.md
 │  │      ├ rbac-authorization.md
@@ -190,6 +193,14 @@ These examples focus on practical backend architectures used in modern systems.
 
 ---
 
+## 4. Threat Modeling
+
+Threat modeling documents help clarify **what can happen (attacks, abuse, misuse)** as a prerequisite for security design.
+
+Its purpose is to make risks concrete and align design assumptions before choosing concrete defenses (the "how") such as secure backend patterns.
+
+---
+
 # Roadmap
 
 ## v0.1
@@ -221,11 +232,16 @@ Secure backend architecture.
 
 ---
 
+## v0.4
+
+Threat modeling.
+
+---
+
 ## Future Plans
 
 Possible future topics include:
 
-* threat modeling (STRIDE examples)
 * cloud security guidelines
 * DevSecOps practices
 * startup incident response playbooks
