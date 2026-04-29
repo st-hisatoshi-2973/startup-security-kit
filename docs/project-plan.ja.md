@@ -109,6 +109,9 @@ startup-security-kit
 │  │  ├ checklists
 │  │  │   └ developer-security-checklist.md
 │  │  │
+│  │  ├ threat-modeling
+│  │  │   └ overview.md
+│  │  │
 │  │  └ secure-backend-patterns
 │  │      ├ jwt-authentication.md
 │  │      ├ rbac-authorization.md
@@ -191,6 +194,14 @@ startup-security-kit
 
 ---
 
+## 4. 脅威モデリング
+
+セキュリティ設計の前提として、**何が起きうるか（攻撃・不正・誤用）** を整理するためのドキュメントです。
+
+セキュアバックエンドパターン（どう守るか）の前に、リスクを具体化して設計の前提を揃えることを目的とします。
+
+---
+
 # ロードマップ
 
 ## v0.1
@@ -222,11 +233,16 @@ startup-security-kit
 
 ---
 
+## v0.4
+
+脅威モデリング
+
+---
+
 ## 将来的な拡張
 
 以下のトピックの追加を検討しています。
 
-* 脅威モデリング（STRIDE）
 * クラウドセキュリティ
 * DevSecOps
 * インシデント対応プレイブック
