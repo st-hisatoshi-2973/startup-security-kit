@@ -110,6 +110,10 @@ startup-security-kit
 │  │  ├ threat-modeling
 │  │  │   └ overview.md
 │  │  │
+│  │  ├ ai-gateway
+│  │  │   ├ README.md
+│  │  │   └ overview.md
+│  │  │
 │  │  └ secure-backend-patterns
 │  │      ├ jwt-authentication.md
 │  │      ├ rbac-authorization.md
@@ -201,6 +205,16 @@ Its purpose is to make risks concrete and align design assumptions before choosi
 
 ---
 
+## 5. AI Gateway
+
+Documentation for **where and how** to control **input, output, externally transmitted data, and observability** when using external model APIs (e.g., LLMs).
+
+It covers embedding a gateway as a **layer for security, control, and visibility** into design, and positions the material as a **concrete framing of where to apply control** for risks surfaced through threat modeling.
+
+It focuses on **AI usage as part of security design**, not comparisons of gateway products or step-by-step product setup.
+
+---
+
 # Roadmap
 
 ## v0.1
@@ -235,6 +249,14 @@ Secure backend architecture.
 ## v0.4
 
 Threat modeling.
+
+---
+
+## v0.5
+
+AI Gateway
+
+* Security design for external model API usage
 
 ---
 
@@ -278,10 +300,9 @@ This project provides **practical security guidance designed specifically for sm
 
 This project aims to become a practical security reference for startups and developer-led teams.
 
-By combining:
+It provides an approach that combines:
 
-* governance
+* security governance
 * development security
-* implementation examples
-
-it provides a comprehensive yet practical approach to security for small organizations.
+* implementation patterns
+* control-layer design for systems that rely on AI

@@ -112,6 +112,10 @@ startup-security-kit
 │  │  ├ threat-modeling
 │  │  │   └ overview.md
 │  │  │
+│  │  ├ ai-gateway
+│  │  │   ├ README.md
+│  │  │   └ overview.md
+│  │  │
 │  │  └ secure-backend-patterns
 │  │      ├ jwt-authentication.md
 │  │      ├ rbac-authorization.md
@@ -202,6 +206,16 @@ startup-security-kit
 
 ---
 
+## 5. AI Gateway
+
+外部のモデル API（LLM 等）を利用する際、**入力・出力・外部送信・可視化** をどこで・どのように制御するかを整理したドキュメントです。
+
+ゲートウェイを **セキュリティ・制御・可視化のためのレイヤー** として設計に組み込む考え方を扱い、脅威モデリングで洗い出したリスクに対して「どこで制御するか」を具体的に整理するものとして位置づけます。
+
+特定のゲートウェイ製品の比較や手順書ではなく、**セキュリティ設計の一部としての AI 利用の扱い** にフォーカスします。
+
+---
+
 # ロードマップ
 
 ## v0.1
@@ -236,6 +250,14 @@ startup-security-kit
 ## v0.4
 
 脅威モデリング
+
+---
+
+## v0.5
+
+AI Gateway
+
+* 外部モデル API 利用向けのセキュリティ設計
 
 ---
 
@@ -284,3 +306,4 @@ startup-security-kit
 * セキュリティガバナンス
 * 開発セキュリティ
 * 実装パターン
+* AI 利用を前提とした制御レイヤーの設計
