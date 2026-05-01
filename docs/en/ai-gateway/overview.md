@@ -161,20 +161,6 @@ The AI Gateway provides the answer to:
 
 ---
 
-# Relationship with Backend Patterns
-
-AI Gateway integrates with existing backend security design:
-
-* API → Input validation
-* Tokens → Authentication and authorization
-* Logging → Observability and traceability
-
-In other words:
-
-**it extends existing security patterns to AI usage**
-
----
-
 # Practical Guidelines
 
 * Never use AI directly—always introduce a control layer
