@@ -114,6 +114,10 @@ startup-security-kit
 │  │  │   ├ README.md
 │  │  │   └ overview.md
 │  │  │
+│  │  ├ data-protection
+│  │  │   ├ README.md
+│  │  │   └ secret-detection.md
+│  │  │
 │  │  └ secure-backend-patterns
 │  │      ├ jwt-authentication.md
 │  │      ├ rbac-authorization.md
@@ -215,6 +219,16 @@ It focuses on **AI usage as part of security design**, not comparisons of gatewa
 
 ---
 
+## 6. Data Protection
+
+Documentation for detecting and controlling secrets and sensitive data **before they unintentionally cross trust boundaries** via AI, APIs, logs, CI/CD, or external services.
+
+The key idea is not “finding leaks after the fact,” but **detecting and controlling data before it leaves**.
+
+As a concrete example, it covers secret detection and how it ties into AI Gateways and logging/auditing to maintain traceability without exposing secrets.
+
+---
+
 # Roadmap
 
 ## v0.1
@@ -257,6 +271,14 @@ Threat modeling.
 AI Gateway
 
 * Security design for external model API usage
+
+---
+
+## v0.6
+
+Data Protection
+
+* Secret detection and controls before crossing trust boundaries
 
 ---
 
