@@ -116,6 +116,10 @@ startup-security-kit
 │  │  │   ├ README.md
 │  │  │   └ overview.md
 │  │  │
+│  │  ├ data-protection
+│  │  │   ├ README.md
+│  │  │   └ secret-detection.md
+│  │  │
 │  │  └ secure-backend-patterns
 │  │      ├ jwt-authentication.md
 │  │      ├ rbac-authorization.md
@@ -216,6 +220,16 @@ startup-security-kit
 
 ---
 
+## 6. データ保護
+
+機密情報や重要データが、AI・API・ログ・CI/CD・外部サービスなどの経路で **意図せず境界の外へ送信される** ことを前提に、検出と制御の考え方を整理するドキュメントです。
+
+重要なのは「漏洩後に探す」ではなく、**境界を越える前に検出・制御する** という設計です。
+
+例として、機密情報検出（secret detection）を扱い、AI Gateway やログ/監査と連係して追跡可能性を担保しつつ、機密情報を外部へ出さない設計を扱います。
+
+---
+
 # ロードマップ
 
 ## v0.1
@@ -258,6 +272,14 @@ startup-security-kit
 AI Gateway
 
 * 外部モデル API 利用向けのセキュリティ設計
+
+---
+
+## v0.6
+
+データ保護
+
+* 機密情報検出（secret detection）と、境界を越える前の制御
 
 ---
 
