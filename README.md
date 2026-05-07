@@ -167,6 +167,10 @@ startup-security-kit
 │  │   │   ├ README.md
 │  │   │   └ overview.md
 │  │   │
+│  │   ├ data-protection
+│  │   │   ├ README.md
+│  │   │   └ secret-detection.md
+│  │   │
 │  │   └ secure-backend-patterns
 │  │       ├ README.md
 │  │       ├ jwt-authentication.md
@@ -200,6 +204,7 @@ English documents are the primary source; Japanese versions are translations. Fo
 * [x] v0.3 — Secure Backend Patterns (multiple guides)
 * [x] v0.4 — Threat Modeling
 * [x] v0.5 — AI Gateway (security design for external model API usage)
+* [x] v0.6 — Data Protection (secret detection, etc.)
 * [ ] Future extensions — cloud security, DevSecOps, incident response playbooks, and more (see [project plan](./docs/en/project-plan.md))
 
 ---
