@@ -118,6 +118,10 @@ startup-security-kit
 │  │  │   ├ README.md
 │  │  │   └ secret-detection.md
 │  │  │
+│  │  ├ outbound-security
+│  │  │   ├ README.md
+│  │  │   └ outbound-communication-control.md
+│  │  │
 │  │  └ secure-backend-patterns
 │  │      ├ jwt-authentication.md
 │  │      ├ rbac-authorization.md
@@ -229,6 +233,16 @@ As a concrete example, it covers secret detection and how it ties into AI Gatewa
 
 ---
 
+## 7. Outbound Security
+
+Documentation for treating destination control for external services and similar outbound communication as part of security design.
+
+The key idea is not assuming communication should be freely allowed, but **allowing only necessary communication**.
+
+It covers identifying outbound communication, preventing unnecessary outbound communication, and making dynamic outbound communication visible and traceable. It also frames how outbound paths should be managed together with AI Gateway and secret detection.
+
+---
+
 # Roadmap
 
 ## v0.1
@@ -279,6 +293,16 @@ AI Gateway
 Data Protection
 
 * Secret detection and controls before crossing trust boundaries
+
+---
+
+## v0.7
+
+Outbound Security
+
+* Destination control for external services and similar outbound communication
+* Prevention of unnecessary outbound communication
+* Visibility and traceability for dynamic outbound communication
 
 ---
 
