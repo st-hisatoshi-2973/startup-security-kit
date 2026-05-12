@@ -120,6 +120,10 @@ startup-security-kit
 │  │  │   ├ README.md
 │  │  │   └ secret-detection.md
 │  │  │
+│  │  ├ outbound-security
+│  │  │   ├ README.md
+│  │  │   └ outbound-communication-control.md
+│  │  │
 │  │  └ secure-backend-patterns
 │  │      ├ jwt-authentication.md
 │  │      ├ rbac-authorization.md
@@ -280,6 +284,16 @@ AI Gateway
 データ保護
 
 * 機密情報検出（secret detection）と、境界を越える前の制御
+
+---
+
+## v0.7
+
+外部通信セキュリティ
+
+* 外部サービスなどへの通信先制御
+* 不要な外部通信の防止
+* 動的な外部通信の可視化・追跡
 
 ---
 

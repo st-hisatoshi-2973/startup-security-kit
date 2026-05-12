@@ -118,6 +118,10 @@ startup-security-kit
 │  │  │   ├ README.md
 │  │  │   └ secret-detection.md
 │  │  │
+│  │  ├ outbound-security
+│  │  │   ├ README.md
+│  │  │   └ outbound-communication-control.md
+│  │  │
 │  │  └ secure-backend-patterns
 │  │      ├ jwt-authentication.md
 │  │      ├ rbac-authorization.md
@@ -279,6 +283,16 @@ AI Gateway
 Data Protection
 
 * Secret detection and controls before crossing trust boundaries
+
+---
+
+## v0.7
+
+Outbound Security
+
+* Destination control for external services and similar outbound communication
+* Prevention of unnecessary outbound communication
+* Visibility and traceability for dynamic outbound communication
 
 ---
 
