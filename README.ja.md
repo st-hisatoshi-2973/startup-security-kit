@@ -170,6 +170,10 @@ startup-security-kit
 │  │   │   ├ README.md
 │  │   │   └ secret-detection.md
 │  │   │
+│  │   ├ outbound-security
+│  │   │   ├ README.md
+│  │   │   └ outbound-communication-control.md
+│  │   │
 │  │   └ secure-backend-patterns
 │  │       ├ README.md
 │  │       ├ jwt-authentication.md
@@ -204,6 +208,7 @@ startup-security-kit
 * [x] v0.4 — 脅威モデリング
 * [x] v0.5 — AI Gateway（外部モデル API 利用のセキュリティ設計）
 * [x] v0.6 — データ保護（機密情報検出など）
+* [x] v0.7 — 外部通信セキュリティ（通信先制御など）
 * [ ] 将来的な拡張 — クラウドセキュリティ、DevSecOps、インシデント対応プレイブック など（[プロジェクト計画](./docs/ja/project-plan.md) 参照）
 
 ---
