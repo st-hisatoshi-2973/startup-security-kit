@@ -233,6 +233,16 @@ As a concrete example, it covers secret detection and how it ties into AI Gatewa
 
 ---
 
+## 7. Outbound Security
+
+Documentation for treating destination control for external services and similar outbound communication as part of security design.
+
+The key idea is not assuming communication should be freely allowed, but **allowing only necessary communication**.
+
+It covers identifying outbound communication, preventing unnecessary outbound communication, and making dynamic outbound communication visible and traceable. It also frames how outbound paths should be managed together with AI Gateway and secret detection.
+
+---
+
 # Roadmap
 
 ## v0.1
