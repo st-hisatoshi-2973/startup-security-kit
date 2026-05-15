@@ -92,9 +92,10 @@ AI利用では、認証情報や機密情報へAIがアクセスできる場合�
 
 # ドキュメント
 
+* [アクセス権限の考え方](./access.md)
+
 以下のドキュメントを作成予定です
 
-* [access](./access.md)
 * [execution](./execution.md)
 * [approval](./approval.md)
 * [audit](./audit.md)
