@@ -85,10 +85,10 @@ also become part of permission design.
 # Documents
 
 * [Access Permission Design](./access.md)
+* [Execution Permission Design](./execution.md)
 
 The following documents are planned:
 
-* [execution](./execution.md)
 * [approval](./approval.md)
 * [audit](./audit.md)
 
