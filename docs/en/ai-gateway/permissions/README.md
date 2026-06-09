@@ -86,11 +86,11 @@ also become part of permission design.
 
 * [Access Permission Design](./access.md)
 * [Execution Permission Design](./execution.md)
+* [Audit Design](./audit.md)
 
 The following documents are planned:
 
 * [approval](./approval.md)
-* [audit](./audit.md)
 
 ---
 

@@ -94,11 +94,11 @@ AI利用では、認証情報や機密情報へAIがアクセスできる場合�
 
 * [アクセス権限の考え方](./access.md)
 * [実行権限の考え方](./execution.md)
+* [監査の考え方](./audit.md)
 
 以下のドキュメントを作成予定です
 
 * [approval](./approval.md)
-* [audit](./audit.md)
 
 ---
 
