@@ -96,43 +96,67 @@ startup-security-kit
 ├ README.ja.md
 │
 ├ docs
-│
-│  ├ en
 │  │
-│  │  ├ isms-lite
-│  │  │   ├ security-policy.md
-│  │  │   ├ asset-register.md
-│  │  │   ├ risk-assessment.md
-│  │  │   ├ incident-response.md
-│  │  │   └ internal-audit.md
-│  │  │
-│  │  ├ checklists
-│  │  │   └ developer-security-checklist.md
-│  │  │
-│  │  ├ threat-modeling
-│  │  │   └ overview.md
-│  │  │
-│  │  ├ ai-gateway
-│  │  │   ├ README.md
-│  │  │   └ overview.md
-│  │  │
-│  │  ├ data-protection
-│  │  │   ├ README.md
-│  │  │   └ secret-detection.md
-│  │  │
-│  │  ├ outbound-security
-│  │  │   ├ README.md
-│  │  │   └ outbound-communication-control.md
-│  │  │
-│  │  └ secure-backend-patterns
-│  │      ├ jwt-authentication.md
-│  │      ├ rbac-authorization.md
-│  │      ├ api-security.md
-│  │      ├ audit-logging.md
-│  │      └ secret-management.md
+│  ├ ai-review
+│  │   └ ai-review.md
+│  │
+│  ├ en
+│  │   ├ project-plan.md
+│  │   │
+│  │   ├ isms-lite
+│  │   │   ├ README.md
+│  │   │   ├ security-policy.md
+│  │   │   ├ asset-register.md
+│  │   │   ├ risk-assessment.md
+│  │   │   ├ incident-response.md
+│  │   │   └ internal-audit.md
+│  │   │
+│  │   ├ checklists
+│  │   │   ├ README.md
+│  │   │   └ developer-security-checklist.md
+│  │   │
+│  │   ├ threat-modeling
+│  │   │   ├ README.md
+│  │   │   └ overview.md
+│  │   │
+│  │   ├ ai-gateway
+│  │   │   ├ README.md
+│  │   │   ├ overview.md
+│  │   │   └ permissions
+│  │   │       ├ README.md
+│  │   │       ├ access.md
+│  │   │       ├ execution.md
+│  │   │       ├ audit.md
+│  │   │       └ approval.md
+│  │   │
+│  │   ├ data-protection
+│  │   │   ├ README.md
+│  │   │   └ secret-detection.md
+│  │   │
+│  │   ├ outbound-security
+│  │   │   ├ README.md
+│  │   │   └ outbound-communication-control.md
+│  │   │
+│  │   └ secure-backend-patterns
+│  │       ├ README.md
+│  │       ├ jwt-authentication.md
+│  │       ├ rbac-authorization.md
+│  │       ├ api-security.md
+│  │       ├ logging-audit.md
+│  │       ├ token-secret.md
+│  │       ├ dependency-security.md
+│  │       ├ ci-cd.md
+│  │       ├ credential-compromise-supply-chain.md
+│  │       └ detection-and-response.md
 │  │
 │  └ ja
-│      └ 日本語翻訳ドキュメント
+│      └ （上記と対応する日本語ドキュメント）
+│
+└ templates
+    └ claude
+        └ skills
+            └ ssk-security-review
+                └ SKILL.md
 ```
 
 英語版を主とし、日本語版は翻訳として提供します。
@@ -244,6 +268,16 @@ startup-security-kit
 
 ---
 
+## 8. AI 利用の権限設計
+
+AI 利用において **AI 自体が実行主体になる**（ファイルを読む、コマンドを実行する、外部サービスへ通信する、GitHub を操作する、クラウド環境へアクセスする、DB へ接続する など）ことを前提に、権限設計の考え方を整理するドキュメントです。
+
+重要なのは「AI に自由な権限を与える」のではなく、**必要な権限だけを許可する** という設計です。
+
+何にアクセスできるか、何を実行できるか、どの操作に承認を必要とするか、どのように追跡・監査するかを扱います。AI Gateway の中で **「AI に何を許可するか」** という権限設計の観点として位置づけ、外部通信セキュリティ（どこへ通信できるか）や機密情報検出（どの情報へアクセス・送信できるか）とも関係します。
+
+---
+
 # ロードマップ
 
 ## v0.1
@@ -304,6 +338,17 @@ AI Gateway
 * 外部サービスなどへの通信先制御
 * 不要な外部通信の防止
 * 動的な外部通信の可視化・追跡
+
+---
+
+## v0.8
+
+AI 利用の権限設計
+
+* アクセス権限の考え方
+* 実行権限の考え方
+* 監査の考え方
+* 承認の考え方
 
 ---
 

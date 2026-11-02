@@ -3,8 +3,6 @@
 Practical security guidance for startups and small teams, combining **lightweight ISMS, developer security checklists, secure backend design, and threat modeling**.
 It also includes **AI Gateway** documentation (a control-layer perspective on design) when you integrate external model APIs (such as LLMs).
 
-Security starter kit for startups and small teams.
-
 Many security frameworks are designed for large enterprises and are too heavy for startups.
 
 Startup Security Kit focuses on **lightweight and practical security practices** that small teams can adopt.
@@ -102,6 +100,28 @@ Clarifies **where and how** to control input, output, externally transmitted dat
 
 * [Documentation (English)](./docs/en/ai-gateway/README.md)
 
+#### AI Permission Design
+
+As AI itself increasingly becomes an execution actor (reading files, executing commands, communicating with external services, etc.), this covers permission design for **what AI should be allowed to do**: what AI can access, what it can execute, which operations require approval, and how operations are traced and audited. The key idea is allowing only the permissions that are necessary.
+
+* [Documentation (English)](./docs/en/ai-gateway/permissions/README.md)
+
+---
+
+### Data Protection
+
+Covers how to detect and control secrets and sensitive data that pass through boundaries such as AI, APIs, logs, CI/CD, and external services. The key idea is **not "finding leaks after they happen," but "controlling data before it leaves."**
+
+* [Documentation (English)](./docs/en/data-protection/README.md)
+
+---
+
+### Outbound Security
+
+Covers how outbound communication to external services, AI APIs, and other external systems should be understood and controlled as part of security design. The key idea is **not assuming communication should be freely allowed, but allowing only the communication that is necessary.**
+
+* [Documentation (English)](./docs/en/outbound-security/README.md)
+
 ---
 
 # Target Audience
@@ -126,6 +146,7 @@ This project provides practical security guidance for such environments.
 4. Apply the developer security checklist
 5. As needed, see [Threat Modeling](./docs/en/threat-modeling/README.md) and [Secure Backend Patterns](./docs/en/secure-backend-patterns/README.md)
 6. If you use external model APIs, see [AI Gateway](./docs/en/ai-gateway/README.md)
+7. If you grant permissions to AI agents, see [AI Permission Design](./docs/en/ai-gateway/permissions/README.md)
 
 This provides a basic security foundation for small teams.
 
@@ -165,7 +186,13 @@ startup-security-kit
 │  │   │
 │  │   ├ ai-gateway
 │  │   │   ├ README.md
-│  │   │   └ overview.md
+│  │   │   ├ overview.md
+│  │   │   └ permissions
+│  │   │       ├ README.md
+│  │   │       ├ access.md
+│  │   │       ├ execution.md
+│  │   │       ├ audit.md
+│  │   │       └ approval.md
 │  │   │
 │  │   ├ data-protection
 │  │   │   ├ README.md
@@ -210,6 +237,7 @@ English documents are the primary source; Japanese versions are translations. Fo
 * [x] v0.5 — AI Gateway (security design for external model API usage)
 * [x] v0.6 — Data Protection (secret detection, etc.)
 * [x] v0.7 — Outbound Security (destination control, etc.)
+* [x] v0.8 — AI Gateway Permissions (access, execution, audit, approval)
 * [ ] Future extensions — cloud security, DevSecOps, incident response playbooks, and more (see [project plan](./docs/en/project-plan.md))
 
 ---

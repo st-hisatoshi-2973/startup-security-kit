@@ -94,43 +94,67 @@ startup-security-kit
 ├ README.ja.md
 │
 ├ docs
-│
-│  ├ en
 │  │
-│  │  ├ isms-lite
-│  │  │   ├ security-policy.md
-│  │  │   ├ asset-register.md
-│  │  │   ├ risk-assessment.md
-│  │  │   ├ incident-response.md
-│  │  │   └ internal-audit.md
-│  │  │
-│  │  ├ checklists
-│  │  │   └ developer-security-checklist.md
-│  │  │
-│  │  ├ threat-modeling
-│  │  │   └ overview.md
-│  │  │
-│  │  ├ ai-gateway
-│  │  │   ├ README.md
-│  │  │   └ overview.md
-│  │  │
-│  │  ├ data-protection
-│  │  │   ├ README.md
-│  │  │   └ secret-detection.md
-│  │  │
-│  │  ├ outbound-security
-│  │  │   ├ README.md
-│  │  │   └ outbound-communication-control.md
-│  │  │
-│  │  └ secure-backend-patterns
-│  │      ├ jwt-authentication.md
-│  │      ├ rbac-authorization.md
-│  │      ├ api-security.md
-│  │      ├ audit-logging.md
-│  │      └ secret-management.md
+│  ├ ai-review
+│  │   └ ai-review.md
+│  │
+│  ├ en
+│  │   ├ project-plan.md
+│  │   │
+│  │   ├ isms-lite
+│  │   │   ├ README.md
+│  │   │   ├ security-policy.md
+│  │   │   ├ asset-register.md
+│  │   │   ├ risk-assessment.md
+│  │   │   ├ incident-response.md
+│  │   │   └ internal-audit.md
+│  │   │
+│  │   ├ checklists
+│  │   │   ├ README.md
+│  │   │   └ developer-security-checklist.md
+│  │   │
+│  │   ├ threat-modeling
+│  │   │   ├ README.md
+│  │   │   └ overview.md
+│  │   │
+│  │   ├ ai-gateway
+│  │   │   ├ README.md
+│  │   │   ├ overview.md
+│  │   │   └ permissions
+│  │   │       ├ README.md
+│  │   │       ├ access.md
+│  │   │       ├ execution.md
+│  │   │       ├ audit.md
+│  │   │       └ approval.md
+│  │   │
+│  │   ├ data-protection
+│  │   │   ├ README.md
+│  │   │   └ secret-detection.md
+│  │   │
+│  │   ├ outbound-security
+│  │   │   ├ README.md
+│  │   │   └ outbound-communication-control.md
+│  │   │
+│  │   └ secure-backend-patterns
+│  │       ├ README.md
+│  │       ├ jwt-authentication.md
+│  │       ├ rbac-authorization.md
+│  │       ├ api-security.md
+│  │       ├ logging-audit.md
+│  │       ├ token-secret.md
+│  │       ├ dependency-security.md
+│  │       ├ ci-cd.md
+│  │       ├ credential-compromise-supply-chain.md
+│  │       └ detection-and-response.md
 │  │
 │  └ ja
-│      └ (Japanese translations)
+│      └ (Japanese translations matching the layout above)
+│
+└ templates
+    └ claude
+        └ skills
+            └ ssk-security-review
+                └ SKILL.md
 ```
 
 English documents are the primary source.
@@ -243,6 +267,16 @@ It covers identifying outbound communication, preventing unnecessary outbound co
 
 ---
 
+## 8. AI Permission Design
+
+Documentation for permission design for AI usage, where **AI itself is increasingly becoming an execution actor** (reading files, executing commands, communicating with external services, operating GitHub, accessing cloud environments, connecting to databases, etc.).
+
+The key idea is not giving AI unrestricted permissions, but **allowing only the permissions that are necessary**.
+
+It covers what AI can access, what AI can execute, which operations require approval, and how operations should be traced and audited. It is positioned within AI Gateway as the permission-design perspective on **what AI should be allowed to do**, and also relates to outbound security (where AI can communicate) and secret detection (what information AI can access or be sent).
+
+---
+
 # Roadmap
 
 ## v0.1
@@ -303,6 +337,17 @@ Outbound Security
 * Destination control for external services and similar outbound communication
 * Prevention of unnecessary outbound communication
 * Visibility and traceability for dynamic outbound communication
+
+---
+
+## v0.8
+
+AI Gateway Permissions
+
+* Access permission design
+* Execution permission design
+* Audit design
+* Approval design
 
 ---
 
